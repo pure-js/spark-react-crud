@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/spark-react-crud/static/css/main.64900bf2.chunk.css",
+    "main.js": "/spark-react-crud/static/js/main.d4c00782.chunk.js",
+    "main.js.map": "/spark-react-crud/static/js/main.d4c00782.chunk.js.map",
+    "runtime-main.js": "/spark-react-crud/static/js/runtime-main.70b0a4fa.js",
+    "runtime-main.js.map": "/spark-react-crud/static/js/runtime-main.70b0a4fa.js.map",
+    "static/css/2.f93178fb.chunk.css": "/spark-react-crud/static/css/2.f93178fb.chunk.css",
+    "static/js/2.2278078b.chunk.js": "/spark-react-crud/static/js/2.2278078b.chunk.js",
+    "static/js/2.2278078b.chunk.js.map": "/spark-react-crud/static/js/2.2278078b.chunk.js.map",
+    "index.html": "/spark-react-crud/index.html",
+    "precache-manifest.eefa7477dcfb7760626e7e9e0a198e71.js": "/spark-react-crud/precache-manifest.eefa7477dcfb7760626e7e9e0a198e71.js",
+    "service-worker.js": "/spark-react-crud/service-worker.js",
+    "static/css/2.f93178fb.chunk.css.map": "/spark-react-crud/static/css/2.f93178fb.chunk.css.map",
+    "static/css/main.64900bf2.chunk.css.map": "/spark-react-crud/static/css/main.64900bf2.chunk.css.map",
+    "static/js/2.2278078b.chunk.js.LICENSE.txt": "/spark-react-crud/static/js/2.2278078b.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.70b0a4fa.js",
+    "static/css/2.f93178fb.chunk.css",
+    "static/js/2.2278078b.chunk.js",
+    "static/css/main.64900bf2.chunk.css",
+    "static/js/main.d4c00782.chunk.js"
+  ]
+}
