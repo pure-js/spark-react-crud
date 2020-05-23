@@ -2,10 +2,10 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Product from './Product';
 import { Container, Row, Col } from 'reactstrap'
-import { chunk } from 'lodash'
+import _chunk from 'lodash/chunk'
 
 const ProductList = ({ products }) => {
-  const productsGroups = chunk(products, 3)
+  const productsGroups = _chunk(products, 3)
 
   return (
     <Container>
