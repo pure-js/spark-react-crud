@@ -1,0 +1,68 @@
+import React from 'react';
+import PropTypes from 'prop-types';
+import {
+  Card, CardContent, CardHeader, List, ListItem,
+} from '@material-ui/core';
+
+import dayjs from 'dayjs';
+
+const shortDateFormat = 'MM/DD/YYYY';
+const longDateFormat = 'MM/DD/YYYY hh:mm a';
+
+const Product = ({ product }) => {
+  const receiptDate = product.receiptDate ? dayjs(product.receiptDate).format(shortDateFormat) : '-';
+  const expirationDate = product.expirationDate ? dayjs(product.expirationDate).format(shortDateFormat) : '-';
+  const createdAt = product.createdAt ? dayjs(product.createdAt).format(longDateFormat) : '-';
+
+  return (
+    <Card>
+      <CardHeader>{product.name}</CardHeader>
+      <CardContent>
+        <List>
+          <ListItem>
+            Brand:
+            {product.brand}
+          </ListItem>
+          <ListItem>
+            Rating:
+            {product.rating}
+          </ListItem>
+          <ListItem>
+            Featured:
+            {product.featured ? 'Yes' : 'No'}
+          </ListItem>
+          <ListItem>
+            Items In Stock:
+            {product.itemsInStock}
+          </ListItem>
+          <ListItem>
+            Categories:
+            <ul>
+              {product.categories.map((category) => (
+                <li key={category.id}>{category.name}</li>
+              ))}
+            </ul>
+          </ListItem>
+          <ListItem>
+            Receipt Date:
+            {receiptDate}
+          </ListItem>
+          <ListItem>
+            Expiration Date:
+            {expirationDate}
+          </ListItem>
+          <ListItem>
+            Created At:
+            {createdAt}
+          </ListItem>
+        </List>
+      </CardContent>
+    </Card>
+  );
+};
+
+Product.propTypes = {
+  product: PropTypes.object.isRequired,
+};
+
+export default Product;

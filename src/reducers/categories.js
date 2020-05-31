@@ -12,10 +12,8 @@ export function categories(state = [], action) {
 }
 
 export function getCategoriesById(state) {
-  return state.categories.reduce((acc, category) => {
-    return {
-      ...acc,
-      [category.id]: category
-    }
-  }, {})
+  return state.categories.reduce((acc, category) => ({
+    ...acc,
+    [category.id]: category,
+  }), {});
 }
