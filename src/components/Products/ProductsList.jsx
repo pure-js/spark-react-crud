@@ -1,7 +1,8 @@
 import React, { Fragment } from 'react';
 import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
 import { Fab, Grid } from '@material-ui/core';
-import { AddIcon } from '@material-ui/icons';
+import AddIcon from '@material-ui/icons/Add';
 import _chunk from 'lodash/chunk';
 import Product from './Product';
 
@@ -19,7 +20,7 @@ const ProductList = ({ products }) => {
           ))}
         </Fragment>
       ))}
-      <Fab color="primary" aria-label="add">
+      <Fab to="/add" component={RouterLink} color="primary" aria-label="add">
         <AddIcon />
       </Fab>
     </Grid>

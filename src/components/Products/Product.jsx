@@ -1,8 +1,10 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Card, CardContent, CardHeader, List, ListItem,
+  Card, CardContent, List, ListItem, Typography, CardActions, Button,
 } from '@material-ui/core';
+import EditIcon from '@material-ui/icons/Edit';
+import { Link as RouterLink } from 'react-router-dom';
 
 import dayjs from 'dayjs';
 
@@ -16,8 +18,10 @@ const Product = ({ product }) => {
 
   return (
     <Card>
-      <CardHeader>{product.name}</CardHeader>
       <CardContent>
+        <Typography gutterBottom variant="h5" component="h2">
+          {product.name}
+        </Typography>
         <List>
           <ListItem>
             Brand:
@@ -57,6 +61,11 @@ const Product = ({ product }) => {
           </ListItem>
         </List>
       </CardContent>
+      <CardActions disableSpacing>
+        <Button to="edit" component={RouterLink}>
+          <EditIcon />
+        </Button>
+      </CardActions>
     </Card>
   );
 };
