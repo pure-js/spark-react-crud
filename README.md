@@ -1,7 +1,7 @@
 # Frontend engineer trial
 
 ## Before you begin
-Estimated time for the task is 3 hours. You don’t need to use any APIs to store data, in-memory (mocked) storage already implemented in the initial application.
+You don’t need to use any APIs to store data, in-memory (mocked) storage already implemented in the initial application.
 Technical requirements:
 - Language: JavaScript
 - Framework: React
