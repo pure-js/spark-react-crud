@@ -8,13 +8,14 @@ import reducers from './reducers';
 import { getRoutes } from './routes';
 import './index.css';
 
-const store = createStore(reducers, composeWithDevTools(applyMiddleware(thunk)));
+const store = createStore(
+  reducers,
+  composeWithDevTools(applyMiddleware(thunk)),
+);
 
 ReactDOM.render(
   <>
-    <Provider store={store}>
-      {getRoutes()}
-    </Provider>
+    <Provider store={store}>{getRoutes()}</Provider>
   </>,
   document.getElementById('root'),
 );
