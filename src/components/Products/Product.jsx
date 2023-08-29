@@ -1,7 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Card, CardContent, List, ListItem, Typography, CardActions, Button,
+  Card,
+  CardContent,
+  List,
+  ListItem,
+  Typography,
+  CardActions,
+  Button,
 } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
 import { Link as RouterLink } from 'react-router-dom';
@@ -12,9 +18,15 @@ const shortDateFormat = 'MM/DD/YYYY';
 const longDateFormat = 'MM/DD/YYYY hh:mm a';
 
 const Product = ({ product }) => {
-  const receiptDate = product.receiptDate ? dayjs(product.receiptDate).format(shortDateFormat) : '-';
-  const expirationDate = product.expirationDate ? dayjs(product.expirationDate).format(shortDateFormat) : '-';
-  const createdAt = product.createdAt ? dayjs(product.createdAt).format(longDateFormat) : '-';
+  const receiptDate = product.receiptDate
+    ? dayjs(product.receiptDate).format(shortDateFormat)
+    : '-';
+  const expirationDate = product.expirationDate
+    ? dayjs(product.expirationDate).format(shortDateFormat)
+    : '-';
+  const createdAt = product.createdAt
+    ? dayjs(product.createdAt).format(longDateFormat)
+    : '-';
 
   return (
     <Card>
