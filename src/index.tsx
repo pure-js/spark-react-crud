@@ -3,10 +3,10 @@ import ReactDOM from 'react-dom';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import thunk from 'redux-thunk';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { composeWithDevTools } from 'redux-devtools-extension';
-import reducers from './reducers';
+
 import { getRoutes } from './routes';
+import reducers from './reducers/index.js';
 import './index.css';
 
 const store = createStore(
@@ -15,8 +15,6 @@ const store = createStore(
 );
 
 ReactDOM.render(
-  <>
-    <Provider store={store}>{getRoutes()}</Provider>
-  </>,
+  <Provider store={store}>{getRoutes()}</Provider>,
   document.getElementById('root'),
 );

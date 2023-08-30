@@ -1,10 +1,9 @@
 import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
-import Main from './components/Main/Main';
-import ProductsContainer from './components/Products/ProductsContainer';
-// eslint-disable-next-line import/no-named-as-default
-import AddProduct from './components/Products/AddProduct';
-import NotFound from './components/NotFound/NotFound';
+import Main from './components/Main/Main.jsx';
+import ProductsContainer from './components/Products/ProductsContainer.jsx';
+import AddProduct from './components/Products/AddProduct.jsx';
+import NotFound from './components/NotFound/NotFound.jsx';
 
 export function getRoutes() {
   return (

@@ -5,3 +5,6 @@ coverage
 # PNPM
 pnpm-lock.yml
 pnpm-lock.yaml
+
+# TypeScript config
+tsconfig.json
