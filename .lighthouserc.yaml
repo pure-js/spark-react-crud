@@ -9,7 +9,7 @@ ci:
         # 'http://localhost/posts/1/edit',
         # 'http://localhost/posts/new',
       ]
-    staticDistDir: './dist'
+    staticDistDir: './build'
     isSinglePageApplication: true
   assert:
     assertions:
