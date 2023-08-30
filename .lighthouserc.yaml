@@ -1,15 +1,15 @@
 ci:
   collect:
     numberOfRuns: 5
+    # staticDistDir: './build'
     startServerCommand: pnpm run preview
     url:
       [
-        'http://localhost',
+        'http://localhost:3000/spark-react-crud',
         # 'http://localhost/posts/1',
         # 'http://localhost/posts/1/edit',
         # 'http://localhost/posts/new',
       ]
-    staticDistDir: './build'
     isSinglePageApplication: true
   assert:
     assertions:

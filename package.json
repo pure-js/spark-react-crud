@@ -34,6 +34,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "build2": "BUILD_PATH='./build/spark-react-crud' react-scripts build",
+    "prepreview": "pnpm run build2",
     "preview": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
