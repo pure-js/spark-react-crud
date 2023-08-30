@@ -74,7 +74,7 @@ const Product = ({ product }) => {
         </List>
       </CardContent>
       <CardActions disableSpacing>
-        <Button to="edit" component={RouterLink}>
+        <Button to="/edit" component={RouterLink}>
           <EditIcon />
         </Button>
       </CardActions>

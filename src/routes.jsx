@@ -7,7 +7,7 @@ import NotFound from './components/NotFound/NotFound';
 
 export function getRoutes() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/spark-react-crud">
       <Main>
         <Switch>
           <Route exact path="/" component={ProductsContainer} />
