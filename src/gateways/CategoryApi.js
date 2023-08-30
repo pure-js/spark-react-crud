@@ -7,5 +7,4 @@ class CategoryApi {
   }
 }
 
-// eslint-disable-next-line import/prefer-default-export
 export const categoryApi = new CategoryApi();

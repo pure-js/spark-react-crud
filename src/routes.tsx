@@ -2,7 +2,6 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from 'react-router-dom';
 import Main from './components/Main/Main.jsx';
 import ProductsContainer from './components/Products/ProductsContainer.jsx';
-// eslint-disable-next-line import/no-named-as-default
 import AddProduct from './components/Products/AddProduct.jsx';
 import NotFound from './components/NotFound/NotFound.jsx';
 
