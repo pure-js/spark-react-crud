@@ -83,6 +83,7 @@ const Product = ({ product }) => {
 };
 
 Product.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   product: PropTypes.object.isRequired,
 };
 

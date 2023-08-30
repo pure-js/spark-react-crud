@@ -28,6 +28,7 @@ class ProductsContainer extends Component {
 }
 
 ProductsContainer.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   products: PropTypes.array.isRequired,
   dispatch: PropTypes.func.isRequired,
 };

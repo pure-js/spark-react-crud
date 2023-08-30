@@ -12,6 +12,7 @@ const ProductList = ({ products }) => {
   return (
     <Grid container spacing={2}>
       {productsGroups.map((productsGroup, index) => (
+        // eslint-disable-next-line react/no-array-index-key
         <Fragment key={index}>
           {productsGroup.map((product) => (
             <Grid item sm="6" md="4" key={product.id}>
@@ -28,6 +29,7 @@ const ProductList = ({ products }) => {
 };
 
 ProductList.propTypes = {
+  // eslint-disable-next-line react/forbid-prop-types
   products: PropTypes.array.isRequired,
 };
 
