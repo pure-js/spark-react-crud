@@ -79,6 +79,9 @@ devDependencies:
   source-map-explorer:
     specifier: ^2.4.2
     version: 2.5.3
+  typescript:
+    specifier: ^5.2.2
+    version: 5.2.2
 
 packages:
 
