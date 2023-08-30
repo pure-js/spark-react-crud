@@ -21,7 +21,7 @@ const ProductList = ({ products }) => {
           ))}
         </Fragment>
       ))}
-      <Fab to="/add" component={RouterLink} color="primary" aria-label="add">
+      <Fab to="/add" component={RouterLink} data-testid="add-product-btn" color="primary" aria-label="add">
         <AddIcon />
       </Fab>
     </Grid>
