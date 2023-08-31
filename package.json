@@ -3,14 +3,41 @@
   "version": "0.1.0",
   "private": true,
   "type": "module",
+  "main": "src/index.js",
+  "homepage": "https://pure-js.github.io/spark-react-crud",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "startCRA": "react-scripts start",
+    "buildCRA": "react-scripts build",
+    "buildCRA2": "BUILD_PATH='./build/spark-react-crud' react-scripts build",
+    "previewCRA": "serve -s build",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "test": "react-scripts test",
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "eject": "react-scripts eject",
+    "lint": "eslint --ext .js,.ts,.jsx,.tsx src/**/*",
+    "e2e": "playwright test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pure-js/spark-react-crud.git"
+  },
   "dependencies": {
+    "@astrojs/react": "^3.0.0",
     "@material-ui/core": "^4.10.0",
     "@material-ui/icons": "^4.9.1",
+    "@types/react": "^18.0.21",
+    "@types/react-dom": "^18.0.6",
+    "astro": "^3.0.3",
     "dayjs": "^1.8.27",
     "lodash": "^4.17.11",
     "prop-types": "^15.7.2",
-    "react": "^16.13.1",
-    "react-dom": "^16.13.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
     "react-redux": "^7.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "^4.0.3",
@@ -32,19 +59,6 @@
     "serve": "^14.2.1",
     "source-map-explorer": "^2.4.2"
   },
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "build2": "BUILD_PATH='./build/spark-react-crud' react-scripts build",
-    "preview": "serve -s build",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
-    "test": "react-scripts test",
-    "analyze": "source-map-explorer 'build/static/js/*.js'",
-    "eject": "react-scripts eject",
-    "lint": "eslint --ext .js,.ts,.jsx,.tsx src/**/*",
-    "e2e": "playwright test"
-  },
   "eslintConfig": {
     "extends": "react-app"
   },
@@ -59,12 +73,6 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "main": "src/index.js",
-  "homepage": "https://pure-js.github.io/spark-react-crud",
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/pure-js/spark-react-crud.git"
   },
   "license": "UNLICENSED"
 }
