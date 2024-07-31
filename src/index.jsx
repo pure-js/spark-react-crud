@@ -20,5 +20,5 @@ ReactDOM.render(
   <>
     <Provider store={store}>{getRoutes()}</Provider>
   </>,
-  document.getElementById('root'),
+  document.getElementById('app'),
 );
