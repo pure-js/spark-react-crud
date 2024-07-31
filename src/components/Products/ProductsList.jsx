@@ -1,9 +1,11 @@
 import React, { Fragment } from 'react';
-import PropTypes from 'prop-types';
 import { Link as RouterLink } from 'react-router-dom';
+
 import { Fab, Grid } from '@material-ui/core';
 import AddIcon from '@material-ui/icons/Add';
 import _chunk from 'lodash/chunk';
+import PropTypes from 'prop-types';
+
 import Product from './Product';
 
 const ProductList = ({ products }) => {
@@ -21,7 +23,13 @@ const ProductList = ({ products }) => {
           ))}
         </Fragment>
       ))}
-      <Fab to="/add" component={RouterLink} data-testid="add-product-btn" color="primary" aria-label="add">
+      <Fab
+        to="/add"
+        component={RouterLink}
+        data-testid="add-product-btn"
+        color="primary"
+        aria-label="add"
+      >
         <AddIcon />
       </Fab>
     </Grid>
