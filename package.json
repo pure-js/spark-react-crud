@@ -28,14 +28,13 @@
     "eslint-plugin-react-hooks": "^4.6.2",
     "prettier": "3.3.3",
     "redux-devtools-extension": "^2.13.9",
-    "serve": "^14.2.3",
     "source-map-explorer": "^2.5.3",
     "vite": "^5.3.5"
   },
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "serve -s build",
+    "preview": "vite preview",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test",
