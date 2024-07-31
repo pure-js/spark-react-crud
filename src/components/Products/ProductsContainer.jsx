@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
+
 import PropTypes from 'prop-types';
-import Header from '../Header/Header';
-import ProductsList from './ProductsList';
+
 import { fetchCategories } from '../../actions/categories';
 import { fetchProducts } from '../../actions/products';
 import { getCategoriesById } from '../../reducers/categories';
+import Header from '../Header/Header';
+import ProductsList from './ProductsList';
 
 class ProductsContainer extends Component {
   componentDidMount() {

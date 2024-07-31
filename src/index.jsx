@@ -1,13 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import thunk from 'redux-thunk';
+
+import { applyMiddleware, createStore } from 'redux';
 // eslint-disable-next-line import/no-extraneous-dependencies
 import { composeWithDevTools } from 'redux-devtools-extension';
+import thunk from 'redux-thunk';
+
+import './index.css';
 import reducers from './reducers';
 import { getRoutes } from './routes';
-import './index.css';
 
 const store = createStore(
   reducers,
@@ -18,5 +20,5 @@ ReactDOM.render(
   <>
     <Provider store={store}>{getRoutes()}</Provider>
   </>,
-  document.getElementById('root'),
+  document.getElementById('app'),
 );

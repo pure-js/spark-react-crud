@@ -1,18 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import { Link as RouterLink } from 'react-router-dom';
+
 import {
+  Button,
   Card,
+  CardActions,
   CardContent,
   List,
   ListItem,
   Typography,
-  CardActions,
-  Button,
 } from '@material-ui/core';
 import EditIcon from '@material-ui/icons/Edit';
-import { Link as RouterLink } from 'react-router-dom';
-
 import dayjs from 'dayjs';
+import PropTypes from 'prop-types';
 
 const shortDateFormat = 'MM/DD/YYYY';
 const longDateFormat = 'MM/DD/YYYY hh:mm a';
