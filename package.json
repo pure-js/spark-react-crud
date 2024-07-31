@@ -35,7 +35,6 @@
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "build2": "BUILD_PATH='./build/spark-react-crud' react-scripts build",
     "preview": "serve -s build",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
